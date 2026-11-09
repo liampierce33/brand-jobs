@@ -1,0 +1,45 @@
+name: Update jobs
+
+on:
+  schedule:
+    # Times are UTC. These five runs land at about 6:40am, 9:40am, 12:40pm, 3:40pm and 6:40pm Eastern (standard time).
+    # Employer boards are checked every run; LinkedIn/Indeed/Glassdoor (JSearch) and Adzuna once a day.
+    - cron: "40 11,14,17,20,23 * * *"
+  workflow_dispatch: {}   # adds a "Run workflow" button for manual runs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-jobs
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Collect jobs and send alerts
+        env:
+          JSEARCH_API_KEY: ${{ secrets.JSEARCH_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          export DASHBOARD_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          python collect.py
+      - name: Save jobs.json
+        run: |
+          git config user.name "job-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add jobs.json
+          git diff --cached --quiet || (git commit -m "Update jobs $(date -u +%F)" && git push)

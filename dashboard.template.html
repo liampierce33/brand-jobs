@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Roles · Greater Boston</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d2433;--muted:#5d6577;--line:#e4e0d6;--accent:#0f6e66;--accent-soft:#e2f1ef;--warm:#b5482c;--warm-soft:#fbe9e3;--gold:#8a6400;--gold-soft:#fbf1d6;--blue:#2f5596;--blue-soft:#e6edf8;--radius:14px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "DM Sans",system-ui,-apple-system,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px}
+header h1{font:600 30px/1.15 Fraunces,Georgia,serif;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:14px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 20px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;min-width:130px}
+.stat b{display:block;font-size:24px;line-height:1.1}
+.stat span{color:var(--muted);font-size:13px}
+@media(max-width:600px){.stats{gap:8px}.stat{min-width:0;flex:1 1 40%;padding:8px 12px}.stat b{font-size:20px}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:16px}
+.panel h2{font-size:16px;margin:0 0 4px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:10px}
+@media(max-width:860px){.controls{grid-template-columns:1fr 1fr}}
+label.f{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:4px;font-weight:500}
+input[type=search],select,textarea{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;width:100%}
+textarea{min-height:90px;resize:vertical}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;user-select:none}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn{font:inherit;font-weight:600;border-radius:10px;padding:8px 14px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-size:14px}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.5;cursor:default}
+.list{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:6px 16px}
+.card.new{border-color:var(--warm);box-shadow:0 0 0 3px var(--warm-soft)}
+.card .co{font-weight:700;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.card h3{margin:2px 0 6px;font-size:18px;line-height:1.3}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--muted);font-size:14px}
+.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12.5px;font-weight:600}
+.p-hybrid{background:var(--accent-soft);color:var(--accent)}
+.p-remote{background:var(--blue-soft);color:var(--blue)}
+.p-onsite{background:#eee;color:#444}
+.p-unknown{background:#f1efe9;color:#6a6355}
+.p-sal{background:var(--gold-soft);color:var(--gold)}
+.p-nosal{background:#f4f1ea;color:#6a6355;border:1px dashed #cfc7b4}
+.p-new{background:var(--warm);color:#fff}
+.p-prio{background:var(--accent);color:#fff}
+.p-verified{background:var(--accent-soft);color:var(--accent)}
+.p-listed{background:var(--blue-soft);color:var(--blue)}
+.p-check{background:var(--warm-soft);color:var(--warm)}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;grid-row:1/3;grid-column:2}
+.fit{width:62px;height:62px;margin-bottom:18px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:17px;position:relative}
+.fit small{position:absolute;bottom:-16px;font-size:11px;color:var(--muted);font-weight:500;white-space:nowrap}
+details{grid-column:1/3;border-top:1px solid var(--line);margin-top:8px;padding-top:8px}
+summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--accent);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸ ";}
+details[open] summary::before{content:"▾ ";}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+@media(max-width:760px){.dgrid{grid-template-columns:1fr}.card{grid-template-columns:1fr}.side{grid-row:auto;grid-column:1;flex-direction:row;align-items:center}}
+.dgrid h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.dgrid ul{margin:0;padding-left:18px}
+.dgrid li{margin-bottom:4px}
+.skill{display:inline-block;background:#f3f1ec;border-radius:6px;padding:2px 8px;margin:0 4px 4px 0;font-size:12.5px}
+.skill.hit{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.skill.gap{background:var(--warm-soft);color:var(--warm)}
+.contact{background:#faf9f6;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.note{font-size:12.5px;color:var(--muted)}
+.empty{text-align:center;color:var(--muted);padding:40px}
+.foot{margin-top:28px;font-size:12.5px;color:var(--muted)}
+#rstatus{font-size:13px;color:var(--muted)}
+.fitbox{background:#faf9f6;border-radius:10px;padding:10px 12px;margin-top:10px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Brand marketing roles · Greater Boston</h1>
+  <div class="sub" id="datastatus"></div>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<section class="panel" id="resume">
+  <div class="row" style="justify-content:space-between">
+    <div><h2>Rank roles by fit with your resume</h2>
+      <div class="note">Your resume is read only in this browser. It isn't uploaded anywhere. PDF, Word (.docx) or .txt, or paste the text.</div></div>
+    <div class="row">
+      <label class="btn ghost" for="rfile" style="cursor:pointer">Upload resume</label>
+      <input id="rfile" type="file" accept=".pdf,.docx,.txt,.md" hidden>
+      <button class="btn ghost" id="rpastebtn" type="button">Paste text</button>
+      <button class="btn ghost" id="rclear" type="button" hidden>Clear</button>
+    </div>
+  </div>
+  <div id="rpaste" hidden style="margin-top:10px">
+    <textarea id="rtext" placeholder="Paste resume text here…"></textarea>
+    <div class="row" style="margin-top:8px"><button class="btn" id="rgo" type="button">Score my fit</button>
+      <label class="note"><input type="checkbox" id="rremember" checked> Remember on this device</label></div>
+  </div>
+  <div id="rstatus" style="margin-top:8px"></div>
+</section>
+
+<section class="panel">
+  <div class="controls">
+    <label class="f">Search<input type="search" id="q" placeholder="Company, title, skill…"></label>
+    <label class="f">Salary<select id="sal">
+      <option value="any">Any</option><option value="reach">Range reaches $80k+</option><option value="floor">Minimum $80k+</option><option value="none">Not listed only</option></select></label>
+    <label class="f">City<select id="city"><option value="any">All six cities</option></select></label>
+    <label class="f">Listing check<select id="stat"><option value="any">All</option><option value="verified">Verified on employer site</option><option value="listed">Listed on job boards</option><option value="check">Needs a check</option></select></label>
+    <label class="f">Sort by<select id="sort">
+      <option value="priority">Priority (hybrid + $80k+)</option><option value="fit">Resume fit</option><option value="new">Newest first</option><option value="salary">Salary (high → low)</option><option value="company">Company A–Z</option></select></label>
+  </div>
+  <div class="chips" id="arr" role="group" aria-label="Work arrangement">
+    <span class="note" style="align-self:center;margin-right:4px">Work arrangement:</span>
+  </div>
+  <div class="chips"><span class="chip" id="prio" role="button" aria-pressed="false" tabindex="0">★ Priority only: hybrid with $80k+</span>
+    <span class="chip" id="newonly" role="button" aria-pressed="false" tabindex="0">New only</span></div>
+</section>
+
+<div class="list" id="list"></div>
+
+<div class="foot" id="foot"></div>
+</div>
+
+<script id="seed" type="application/json">/*SEED*/</script>
+<script id="skills" type="application/json">/*SKILLS*/</script>
+<script>
+"use strict";
+const SEED = JSON.parse(document.getElementById("seed").textContent);
+const SKILLS = JSON.parse(document.getElementById("skills").textContent);
+const FLOOR = 80000;
+const CITIES = ["Boston","Somerville","Medford","Charlestown","Quincy","Cambridge"];
+const ARRS = ["Hybrid","Remote","On-site","Unknown"];
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("bjt:"+k); return v==null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem("bjt:"+k, JSON.stringify(v)); }catch(e){} },
+  del(k){ try{ localStorage.removeItem("bjt:"+k); }catch(e){} }
+};
+let DATA = null, LIVE = false, RESUME = null, PREV_SEEN = null;
+const state = Object.assign({q:"", sal:"any", city:"any", stat:"any", sort:"priority", arr:[], prio:false, newonly:false}, store.get("filters", {}));
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = n => "$" + Math.round(n/1000) + "k";
+const salaryText = j => (j.salaryMin || j.salaryMax) ? (j.salaryMin && j.salaryMax ? `${money(j.salaryMin)}–${money(j.salaryMax)}` : money(j.salaryMin || j.salaryMax)) : "Salary not listed";
+const listed = j => !!(j.salaryMin || j.salaryMax);
+const reaches = j => (j.salaryMax || j.salaryMin || 0) >= FLOOR;
+const floorOk = j => (j.salaryMin || 0) >= FLOOR;
+const isPriority = j => j.arrangement === "Hybrid" && reaches(j);
+const isNewToday = j => !DATA.meta.baseline && j.firstSeen === DATA.meta.generated;
+const isNewSinceVisit = j => PREV_SEEN && !PREV_SEEN.includes(j.id);
+const fmtDate = s => { if(!s) return ""; const d = new Date(s + "T12:00:00"); return isNaN(d) ? s : d.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}); };
+
+function skillsIn(text){
+  const t = " " + String(text||"").toLowerCase() + " ";
+  return Object.keys(SKILLS).filter(k => SKILLS[k].some(s => t.includes(s)));
+}
+
+// ---------------- resume scoring ----------------
+function resumeYears(text){
+  let best = 0;
+  const m = text.match(/(\d{1,2})\+?\s*years?/gi) || [];
+  m.forEach(x => { const n = parseInt(x, 10); if(n < 40) best = Math.max(best, n); });
+  const yrs = (text.match(/\b(19[89]\d|20[0-2]\d)\b/g) || []).map(Number).filter(y => y >= 1985 && y <= new Date().getFullYear());
+  if(yrs.length) best = Math.max(best, new Date().getFullYear() - Math.min(...yrs));
+  return Math.min(best, 35);
+}
+function resumeLevel(text){
+  const t = text.toLowerCase();
+  if(/\b(vp|vice president|head of|chief marketing)\b/.test(t)) return 5;
+  if(/\bdirector\b/.test(t)) return 4;
+  if(/\b(senior|sr\.?)\s+(brand\s+)?(manager|marketing)/.test(t)) return 3;
+  if(/\b(brand|marketing|product marketing)\s+manager\b/.test(t)) return 2;
+  if(/\b(associate|assistant)\s+(brand\s+)?manager\b/.test(t)) return 1;
+  return 1;
+}
+const LEVEL = {Associate:1, Manager:2, Senior:3, Director:4, Executive:5};
+function scoreJob(j, R){
+  const jobSkills = skillsIn([j.title, j.summary, (j.requirements||[]).join(" "), (j.howToLand||[]).join(" "), j.text].join(" "));
+  const matched = jobSkills.filter(s => R.skills.includes(s));
+  const gaps = jobSkills.filter(s => !R.skills.includes(s));
+  let skillPart = jobSkills.length ? matched.length / jobSkills.length : 0.5;
+  const thin = jobSkills.length < 4;
+  if(thin) skillPart = Math.min(skillPart, 0.6);
+  let senPart = 0.7, senNote = "";
+  const jl = LEVEL[j.seniority] || 2, gap = R.level - jl;
+  if(j.yearsMin){
+    if(R.years >= j.yearsMin) { senPart = 1; senNote = `Meets the ${j.yearsMin}+ years asked (resume shows ~${R.years}).`; }
+    else if(R.years >= j.yearsMin - 1) { senPart = 0.75; senNote = `Slightly under the ${j.yearsMin}+ years asked (~${R.years}); lean on scope and results.`; }
+    else { senPart = 0.4; senNote = `Under the ${j.yearsMin}+ years asked (~${R.years}). A stretch.`; }
+  } else {
+    senPart = gap === 0 ? 1 : gap === 1 || gap === -1 ? 0.75 : 0.45;
+    senNote = gap === 0 ? `Level matches (${j.seniority}).` : gap > 0 ? `Her level looks above this ${j.seniority}-level role. Fine if the brand or pay is right.` : `This ${j.seniority}-level role is a step up from her current level.`;
+  }
+  if(j.yearsMin && R.years > j.yearsMin + 8 && jl <= 2) { senPart = Math.min(senPart, 0.7); senNote += " May read as overqualified."; }
+  const titlePart = /brand/i.test(R.raw) ? 1 : /marketing/i.test(R.raw) ? 0.6 : 0.2;
+  const prefPart = (j.arrangement === "Hybrid" ? 0.5 : 0) + (reaches(j) ? 0.5 : 0);
+  const score = Math.round(100 * (0.55*skillPart + 0.25*senPart + 0.10*titlePart + 0.10*prefPart));
+  if(thin) senNote += " (The posting text here is thin, so open it for a fuller read.)";
+  return {score, matched, gaps, senNote, jobSkills};
+}
+function setResume(text, remember){
+  text = String(text || "").trim();
+  if(text.length < 200){ document.getElementById("rstatus").textContent = "That's too short to be a resume. Try another file or paste the full text."; return; }
+  RESUME = {raw:text, skills:skillsIn(text), years:resumeYears(text), level:resumeLevel(text)};
+  if(remember) store.set("resume", text); else store.del("resume");
+  document.getElementById("rstatus").innerHTML = `Resume loaded: <b>${RESUME.skills.length}</b> skill areas found, about <b>${RESUME.years}</b> years of experience. Roles are now scored and sorted by fit.`;
+  document.getElementById("rclear").hidden = false;
+  document.getElementById("rpaste").hidden = true;
+  state.sort = "fit"; document.getElementById("sort").value = "fit";
+  render();
+}
+
+// --- file readers: PDF (pdf.js from cdnjs), DOCX (built-in unzip), TXT
+async function readDocx(buf){
+  const dv = new DataView(buf), u8 = new Uint8Array(buf);
+  let eocd = -1;
+  for(let i = u8.length - 22; i >= Math.max(0, u8.length - 66000); i--) if(dv.getUint32(i, true) === 0x06054b50){ eocd = i; break; }
+  if(eocd < 0) throw new Error("Not a .docx file");
+  let p = dv.getUint32(eocd + 16, true); const n = dv.getUint16(eocd + 10, true);
+  for(let k = 0; k < n; k++){
+    const method = dv.getUint16(p + 10, true), csize = dv.getUint32(p + 20, true);
+    const nlen = dv.getUint16(p + 28, true), elen = dv.getUint16(p + 30, true), clen = dv.getUint16(p + 32, true), off = dv.getUint32(p + 42, true);
+    const name = new TextDecoder().decode(u8.subarray(p + 46, p + 46 + nlen));
+    if(name === "word/document.xml"){
+      const start = off + 30 + dv.getUint16(off + 26, true) + dv.getUint16(off + 28, true);
+      let data = u8.subarray(start, start + csize);
+      if(method === 8){
+        const ds = new Blob([data]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+        data = new Uint8Array(await new Response(ds).arrayBuffer());
+      }
+      const xml = new TextDecoder().decode(data);
+      return xml.replace(/<\/w:p>/g, "\n").replace(/<w:tab\/>/g, " ").replace(/<[^>]+>/g, "").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">");
+    }
+    p += 46 + nlen + elen + clen;
+  }
+  throw new Error("No document text found in .docx");
+}
+function loadScript(src){ return new Promise((ok, no) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = () => no(new Error("Couldn't load the PDF reader")); document.head.appendChild(s); }); }
+async function readPdf(buf){
+  const base = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+  if(!window.pdfjsLib){ await loadScript(base + "pdf.min.js"); await loadScript(base + "pdf.worker.min.js"); } // worker runs on the page (no separate worker needed)
+  const pdf = await window.pdfjsLib.getDocument({data: new Uint8Array(buf)}).promise;
+  let out = "";
+  for(let i = 1; i <= pdf.numPages; i++){ const c = await (await pdf.getPage(i)).getTextContent(); out += c.items.map(it => it.str).join(" ") + "\n"; }
+  return out;
+}
+document.getElementById("rfile").addEventListener("change", async e => {
+  const f = e.target.files[0]; if(!f) return;
+  const st = document.getElementById("rstatus"); st.textContent = "Reading " + f.name + "…";
+  try{
+    const name = f.name.toLowerCase(); const buf = await f.arrayBuffer();
+    const text = name.endsWith(".pdf") ? await readPdf(buf) : name.endsWith(".docx") ? await readDocx(buf) : new TextDecoder().decode(buf);
+    setResume(text, document.getElementById("rremember").checked);
+  }catch(err){
+    st.textContent = `Couldn't read that file (${err.message}). Use “Paste text” instead.`;
+    document.getElementById("rpaste").hidden = false;
+  }
+  e.target.value = "";
+});
+document.getElementById("rpastebtn").onclick = () => { const p = document.getElementById("rpaste"); p.hidden = !p.hidden; };
+document.getElementById("rgo").onclick = () => setResume(document.getElementById("rtext").value, document.getElementById("rremember").checked);
+document.getElementById("rclear").onclick = () => { RESUME = null; store.del("resume"); document.getElementById("rstatus").textContent = "Resume cleared."; document.getElementById("rclear").hidden = true; if(state.sort === "fit"){ state.sort = "priority"; document.getElementById("sort").value = "priority"; } render(); };
+
+// ---------------- filters & render ----------------
+function priorityScore(j){
+  return (j.arrangement === "Hybrid" ? 3 : j.arrangement === "Unknown" ? 1 : 0)
+       + (floorOk(j) ? 3 : reaches(j) ? 2 : !listed(j) ? 1 : 0)
+       + (isNewToday(j) || isNewSinceVisit(j) ? 1 : 0)
+       + (j.status === "verified" ? 0.5 : j.status === "check" ? -0.5 : 0);
+}
+function filtered(){
+  const q = state.q.trim().toLowerCase();
+  let js = DATA.jobs.filter(j => {
+    if(q && ![j.company, j.title, j.city, j.summary, j.text, (j.requirements||[]).join(" ")].join(" ").toLowerCase().includes(q)) return false;
+    if(state.arr.length && !state.arr.includes(j.arrangement)) return false;
+    if(state.sal === "reach" && !reaches(j)) return false;
+    if(state.sal === "floor" && !floorOk(j)) return false;
+    if(state.sal === "none" && listed(j)) return false;
+    if(state.city !== "any" && j.city !== state.city) return false;
+    if(state.stat !== "any" && j.status !== state.stat) return false;
+    if(state.prio && !isPriority(j)) return false;
+    if(state.newonly && !(isNewToday(j) || isNewSinceVisit(j))) return false;
+    return true;
+  });
+  js.forEach(j => j._fit = RESUME ? scoreJob(j, RESUME) : null);
+  const by = {
+    priority: (a,b) => priorityScore(b) - priorityScore(a) || (b.salaryMax||0) - (a.salaryMax||0),
+    fit: (a,b) => (b._fit?.score ?? -1) - (a._fit?.score ?? -1) || priorityScore(b) - priorityScore(a),
+    new: (a,b) => String(b.firstSeen).localeCompare(a.firstSeen) || String(b.datePosted||"").localeCompare(a.datePosted||""),
+    salary: (a,b) => (b.salaryMax||b.salaryMin||0) - (a.salaryMax||a.salaryMin||0),
+    company: (a,b) => a.company.localeCompare(b.company)
+  };
+  return js.sort(by[state.sort] || by.priority);
+}
+function fitColor(s){ return s >= 70 ? ["var(--accent-soft)","var(--accent)"] : s >= 50 ? ["var(--gold-soft)","var(--gold)"] : ["var(--warm-soft)","var(--warm)"]; }
+function card(j){
+  const newT = isNewToday(j), newV = !newT && isNewSinceVisit(j);
+  const arrCls = {Hybrid:"p-hybrid", Remote:"p-remote", "On-site":"p-onsite"}[j.arrangement] || "p-unknown";
+  const statLabel = {verified:"✓ Verified on employer site", listed:"Listed on job boards", check:"⚠ Needs a check"}[j.status] || j.status;
+  const f = j._fit;
+  const jobSkills = f ? f.jobSkills : skillsIn([j.title, j.summary, (j.requirements||[]).join(" "), j.text].join(" "));
+  const contacts = (j.contacts||[]).map(c => `<div style="margin-bottom:6px"><b>${esc(c.name)}</b>, ${esc(c.title)} <span class="pill p-listed">suggested</span><br>
+      ${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">Source / profile ↗</a>` : ""} ${c.note ? `<div class="note">${esc(c.note)}</div>` : ""}</div>`).join("");
+  const cs = j.contactSearch || {};
+  return `<article class="card${newT||newV ? " new" : ""}">
+   <div>
+    <div class="badges">
+      ${newT ? '<span class="pill p-new">New today</span>' : ""}${newV ? '<span class="pill p-new">New since last visit</span>' : ""}
+      ${isPriority(j) ? '<span class="pill p-prio">★ Priority</span>' : ""}
+      <span class="pill p-${esc(j.status)}" title="${esc(j.statusNote)}">${statLabel}</span>
+    </div>
+    <div class="co">${esc(j.company)}</div>
+    <h3>${esc(j.title)}</h3>
+    <div class="meta">
+      <span>📍 ${esc(j.address || (j.city + ", MA"))}</span>
+      <span class="pill ${arrCls}" title="${esc(j.arrangementNote)}">${esc(j.arrangement === "Unknown" ? "Arrangement not stated" : j.arrangement)}</span>
+      <span class="pill ${listed(j) ? "p-sal" : "p-nosal"}">${salaryText(j)}</span>
+      <span>🗓 ${j.datePosted ? "Posted " + fmtDate(j.datePosted) : esc(j.datePostedNote || "Post date not listed")}</span>
+    </div>
+   </div>
+   <div class="side">
+     ${f ? `<div class="fit" style="background:${fitColor(f.score)[0]};color:${fitColor(f.score)[1]}">${f.score}<small>fit score</small></div>` : ""}
+     <a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Open posting ↗</a>
+   </div>
+   <details>
+     <summary>How to land it, key skills and suggested contact</summary>
+     ${f ? `<div class="fitbox"><b>Fit ${f.score}/100.</b> ${f.matched.length ? `Matched: ${f.matched.map(esc).join(", ")}.` : "No direct skill matches found."}
+        ${f.gaps.length ? `<br>Gaps to address: ${f.gaps.map(esc).join(", ")}.` : ""}<br>Seniority: ${esc(f.senNote)}</div>` : ""}
+     <div class="dgrid">
+      <div>
+        <h4>The role</h4><p style="margin:0 0 10px">${esc(j.summary || "")}</p>
+        <h4>How to land it</h4><ul>${(j.howToLand||[]).map(t => `<li>${esc(t)}</li>`).join("")}</ul>
+      </div>
+      <div>
+        <h4>Key skills from the posting</h4>
+        <div>${jobSkills.map(s => `<span class="skill${f ? (f.matched.includes(s) ? " hit" : " gap") : ""}">${esc(s)}</span>`).join("") || '<span class="note">Open the posting for details.</span>'}</div>
+        ${(j.requirements||[]).length ? `<h4 style="margin-top:10px">Stated requirements</h4><ul>${j.requirements.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+        <h4 style="margin-top:10px">Suggested contact</h4>
+        <div class="contact">${contacts || `<div>No named contact found.${j.contactNote ? " " + esc(j.contactNote) : ""}</div>`}
+          ${cs.url ? `<div style="margin-top:6px">Search LinkedIn for: <a href="${esc(cs.url)}" target="_blank" rel="noopener">${esc(cs.title)} at ${esc(j.company)} ↗</a></div>` : ""}
+          ${contacts && j.contactNote ? `<div class="note">${esc(j.contactNote)}</div>` : ""}</div>
+        <p class="note" style="margin-top:10px">${esc(j.statusNote || "")} ${j.addressNote ? "· " + esc(j.addressNote) : ""} · ${esc(j.arrangementNote || "")} · First tracked ${fmtDate(j.firstSeen)}.</p>
+      </div>
+     </div>
+   </details>
+  </article>`;
+}
+function render(){
+  store.set("filters", {q:state.q, sal:state.sal, city:state.city, stat:state.stat, sort:state.sort, arr:state.arr, prio:state.prio, newonly:state.newonly});
+  const js = filtered(), all = DATA.jobs;
+  document.getElementById("list").innerHTML = js.length ? js.map(card).join("") : `<div class="empty">No roles match these filters.</div>`;
+  const nNew = all.filter(j => isNewToday(j) || isNewSinceVisit(j)).length;
+  document.getElementById("stats").innerHTML = [
+    [all.length, "open roles tracked"], [all.filter(isPriority).length, "★ priority (hybrid, $80k+)"],
+    [nNew, "new today / since last visit"], [all.filter(j => !listed(j)).length, "salary not listed"], [js.length, "showing now"]
+  ].map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+function bind(){
+  const citySel = document.getElementById("city");
+  CITIES.forEach(c => citySel.insertAdjacentHTML("beforeend", `<option>${c}</option>`));
+  const arr = document.getElementById("arr");
+  ARRS.forEach(a => arr.insertAdjacentHTML("beforeend", `<span class="chip" role="button" tabindex="0" data-a="${a}" aria-pressed="${state.arr.includes(a)}">${a === "Unknown" ? "Not stated" : a}</span>`));
+  arr.addEventListener("click", e => { const a = e.target.dataset?.a; if(!a) return;
+    state.arr = state.arr.includes(a) ? state.arr.filter(x => x !== a) : [...state.arr, a]; e.target.setAttribute("aria-pressed", state.arr.includes(a)); render(); });
+  for(const id of ["q","sal","city","stat","sort"]){ const el = document.getElementById(id); el.value = state[id]; el.addEventListener("input", () => { state[id] = el.value; render(); }); }
+  for(const id of ["prio","newonly"]){ const el = document.getElementById(id); el.setAttribute("aria-pressed", state[id]);
+    const t = () => { state[id] = !state[id]; el.setAttribute("aria-pressed", state[id]); render(); };
+    el.addEventListener("click", t); el.addEventListener("keydown", e => { if(e.key === "Enter" || e.key === " "){ e.preventDefault(); t(); } }); }
+}
+async function init(){
+  try{ const r = await fetch("jobs.json?ts=" + Date.now(), {cache:"no-store"}); if(r.ok){ const d = await r.json(); if(d && d.jobs){ DATA = d; LIVE = true; } } }catch(e){}
+  if(!DATA) DATA = SEED;
+  const m = DATA.meta || {};
+  document.getElementById("datastatus").innerHTML = LIVE
+    ? `<span class="dot" style="background:#1f9d55"></span>Live data, updated ${esc(m.generatedAt ? new Date(m.generatedAt).toLocaleString("en-US",{dateStyle:"medium",timeStyle:"short"}) : m.generated)}. Checked 5× daily. Boston, Somerville, Medford, Charlestown, Quincy, Cambridge.`
+    : `<span class="dot" style="background:#c27a00"></span>Snapshot researched ${esc(fmtDate(m.generated))}. Daily updates run on the GitHub copy of this page. Boston, Somerville, Medford, Charlestown, Quincy, Cambridge.`;
+  document.getElementById("foot").innerHTML = `Salaries are shown only when the employer or job board states them; nothing is estimated. “Verified” = pulled from or opened on the employer's own careers page. “Needs a check” = possibly reposted or closed, so confirm before applying. Contacts are suggestions from public sources; titles and names should be confirmed on LinkedIn. Sources: employer job boards (Greenhouse, Lever, Ashby), JSearch (Google for Jobs) and Adzuna.`;
+  PREV_SEEN = store.get("seen", null);
+  bind();
+  const saved = store.get("resume", null);
+  if(saved) setResume(saved, true); else render();
+  store.set("seen", DATA.jobs.map(j => j.id));
+}
+init();
+</script>
+</body>
+</html>

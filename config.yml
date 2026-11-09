@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Job tracker settings. Edit freely on GitHub (pencil icon) — no code needed.
+# ---------------------------------------------------------------------------
+
+# Only these cities are kept (matched against the job's location text).
+cities: [Boston, Somerville, Medford, Charlestown, Quincy, Cambridge]
+
+# A title must match INCLUDE and must not match EXCLUDE (case-insensitive regex).
+title_include: '\bbrand(s|ing)?\b.*\b(manager|marketing|strategy|strategist|lead|director|head)\b|\b(manager|director|head|lead)\b.*\bbrand\b'
+title_exclude: '\b(employer brand|brand ambassador|intern|internship|co-?op|designer|engineer|sales rep|territory|account executive|retail store|cashier|merchandiser)\b'
+
+# Priority rule shown in the dashboard: hybrid + salary floor.
+salary_floor: 80000
+
+# --- Free employer job-board APIs (official, public, no key needed) --------
+# Add companies you like. Find the token in the company's careers URL:
+#   job-boards.greenhouse.io/<token>   jobs.lever.co/<token>   jobs.ashbyhq.com/<token>
+# Wrong tokens are skipped with a warning in the run log (they never break the run).
+greenhouse: [simplisafe, cargurus, draftkings, toast, klaviyo, hubspot, wistia, materialbank, pointfive, rapid7, whoop, ezcater, drizly, chewy, wayfair]
+lever: [whoop, janji, nobull]
+ashby: [wistia, whoop, rapid7]
+
+# --- Aggregator APIs (cover LinkedIn/Indeed/Glassdoor/Built In via Google for Jobs) ---
+# These run once per day to stay inside free quotas.
+jsearch_queries:
+  - brand manager in Boston, MA
+  - brand marketing manager in Boston, MA
+  - brand strategy manager in Boston, MA
+  - brand manager in Cambridge, MA
+adzuna_queries:
+  - {what: brand manager, where: "Boston, MA"}
+  - {what: brand marketing, where: "Cambridge, MA"}
+
+# A job not seen by any aggregator for this many days is treated as expired.
+expire_after_days: 3
+# Hand-added / seed jobs are dropped after this many days unless re-seen.
+manual_max_age_days: 45
+
+# --- Office street addresses (job APIs rarely include them) ---------------
+# key = company name in lower case. Add as you learn them.
+addresses:
+  wayfair: "4 Copley Place, Boston, MA 02116"
+  janji: "285 Washington St, Somerville, MA 02143"
+  procter & gamble: "One Gillette Park, Boston, MA 02127"
+
+# --- Real, named contacts you've confirmed (never invented) -----------------
+# key = company name in lower case.
+contacts:
+  simplisafe:
+    - name: Kaitlin Bonner
+      title: Head of Brand
+      url: https://event.adweek.com/AWH-advertisinghq-2025/speaker/1943014/kaitlin-bonner
+      note: From a 2025 Adweek speaker bio. Confirm on LinkedIn that she's still in the role.

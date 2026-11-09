@@ -1,0 +1,630 @@
+{
+ "meta": {
+  "generated": "2026-11-08",
+  "generatedAt": "2026-11-08T21:45:00-05:00",
+  "baseline": true,
+  "note": "Seed researched by Claude on Nov 8, 2026. The daily collector takes over from here.",
+  "sources": {
+   "manual": 15
+  }
+ },
+ "jobs": [
+  {
+   "id": "lego-design-brand-manager-preschool",
+   "company": "The LEGO Group",
+   "title": "Brand Manager (Design) – Preschool, US Marketing",
+   "city": "Boston",
+   "addressNote": "Posting lists Boston, MA only (no street address).",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Average of 3 days/week in office (per posting).",
+   "salaryMin": 107885,
+   "salaryMax": 161827,
+   "seniority": "Manager",
+   "datePostedNote": "Not shown on LEGO's page; Built In listed it as recently posted.",
+   "url": "https://www.lego.com/en-us/careers/job/brand-manager-005ee9a07b031001305279ddb5420000",
+   "status": "verified",
+   "statusNote": "Opened on lego.com on Nov 8, 2026: live, no closing date.",
+   "contactNote": "Posting says this role reports to the US Brand Director. No name found publicly.",
+   "summary": "Design-side Brand Manager for LEGO Preschool (DUPLO): owns audience strategy, budget, calendar and design-led marketing across campaigns, retail, media and partners, alongside a 'Delivery' Brand Manager.",
+   "howToLand": [
+    "Lead with kids/family, toy, entertainment, retail or lifestyle brand work. The posting names these sectors.",
+    "Bring one example of a campaign toolkit, brand guideline or visual-identity system you built or governed.",
+    "Show growth math: how you moved brand health, penetration or sales, with numbers.",
+    "Show you can work with retail partners and in a matrix with Global teams and agencies."
+   ],
+   "requirements": [
+    "Marketing experience, ideally family/kids/toy/retail/lifestyle",
+    "Strong analytics and record of brand growth",
+    "Retail partner relationships",
+    "Integrated channels, metrics and measurement",
+    "Brand guidelines / visual identity / campaign toolkits",
+    "Advanced Excel & PowerPoint"
+   ],
+   "text": "brand strategy budget planning marketing calendar campaign execution integrated marketing channels metrics measurement retail partner relationships brand guidelines visual identity campaign toolkits packaging retail displays analytics brand growth cross-functional matrixed negotiation global teams agency excel powerpoint presentation writing kids family toy preschool innovation",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "US Brand Director",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=The%20LEGO%20Group%20US%20Brand%20Director"
+   }
+  },
+  {
+   "id": "lego-delivery-brand-manager-adult",
+   "company": "The LEGO Group",
+   "title": "Brand Manager, Adult Audience, US Marketing (Delivery)",
+   "city": "Boston",
+   "addressNote": "Posting lists Boston, MA only.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Average of 3 days/week in office (#LI-Hybrid).",
+   "salaryMin": 107885,
+   "salaryMax": 161827,
+   "seniority": "Manager",
+   "datePostedNote": "Job boards showed it posted about 6 days ago (≈ Nov 2, 2026).",
+   "url": "https://www.lego.com/en-us/careers",
+   "status": "listed",
+   "statusNote": "Live on Indeed and Jooble this week. I didn't capture the direct LEGO link, so search LEGO careers for 'Adult Audience'.",
+   "contactNote": "Reports to the US Brand Director (per posting).",
+   "summary": "'Delivery' Brand Manager for adult LEGO fans: turns the Design Brand Manager's strategy into integrated activations across media, retail, eCommerce, social, influencer, PR and experiential, and reports on brand health and sales.",
+   "howToLand": [
+    "Frame your experience as execution plus measurement: briefs to launch to results across 4+ channels.",
+    "Prepare a one-page campaign post-mortem that links brand-health metrics to sales.",
+    "Mention digital, trade marketing or key-account work. The posting asks for at least one.",
+    "Show a genuine adult-fan angle (sets, community, collabs). LEGO values brand passion."
+   ],
+   "requirements": [
+    "Integrated plans across media, retail, eCommerce, social, influencer, PR, experiential",
+    "Agency and partner management",
+    "Business analysis in Excel/PowerPoint",
+    "Digital, trade marketing or key account experience"
+   ],
+   "text": "integrated marketing plans activation media retail ecommerce social influencer public relations experiential agency partners licensing brand health commercial performance measurement evaluation creative brief excel powerpoint business analysis digital marketing trade marketing key account campaign",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "US Brand Director",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=The%20LEGO%20Group%20US%20Brand%20Director"
+   }
+  },
+  {
+   "id": "lego-creative-agency-sr-brand-strategy",
+   "company": "The LEGO Group",
+   "title": "Creative Agency Sr Brand Strategy Manager",
+   "city": "Boston",
+   "addressNote": "Indeed lists Boston, MA 02115.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Listed as hybrid on Indeed.",
+   "salaryMin": 134750,
+   "salaryMax": 202126,
+   "seniority": "Senior",
+   "datePostedNote": "Date not captured.",
+   "url": "https://www.lego.com/en-us/careers",
+   "status": "listed",
+   "statusNote": "Seen on Indeed this week. Search LEGO careers for 'Brand Strategy'.",
+   "contactNote": "No reporting line captured.",
+   "summary": "Senior brand-strategy role in LEGO's in-house creative agency. Needs deep brand-communications experience and integrated brand strategy.",
+   "howToLand": [
+    "Show agency-side or in-house-agency strategy work: insight to proposition to brief to work.",
+    "Bring two integrated brand strategies you wrote, with the creative they produced.",
+    "This is a stretch-senior role. Apply if she has 7+ years in brand communications."
+   ],
+   "requirements": [
+    "Extensive brand communications experience",
+    "Integrated brand strategy development and delivery"
+   ],
+   "text": "brand strategy brand communications integrated brand strategy creative brief agency storytelling insights positioning",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Head of Brand Strategy",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=The%20LEGO%20Group%20Head%20of%20Brand%20Strategy"
+   }
+  },
+  {
+   "id": "wayfair-brand-strategy-manager",
+   "company": "Wayfair",
+   "title": "Brand Strategy Manager",
+   "city": "Boston",
+   "address": "4 Copley Place, Boston, MA 02116",
+   "addressNote": "Address from the Indeed job details.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "In office Mon–Thu, WFH Friday (per posting).",
+   "salaryMin": 99000,
+   "salaryMax": 110000,
+   "seniority": "Manager",
+   "yearsMin": 6,
+   "datePostedNote": "Req 20120. Posting date not captured.",
+   "url": "https://www.wayfair.com/careers/job/brand-strategy-manager/2-20120",
+   "status": "listed",
+   "statusNote": "Wayfair's page was indexed this week and the job is on Indeed. Wayfair blocked my direct check, so click to confirm.",
+   "contactNote": "Posting says the role reports to the Head of Brand, Insights & Partnerships.",
+   "summary": "Shapes Wayfair's masterbrand positioning and leads strategy for major campaigns (evergreen platform, Outdoor, Holiday). Partners with Wayfair Creative and agencies, and manages members of the Brand Strategy team.",
+   "howToLand": [
+    "Lead with positioning work: a consumer problem you defined and the strategic choice it led to.",
+    "Show briefs that became campaigns, and how you kept agency work tied to the insight.",
+    "Mention any team-lead or mentoring experience. The role manages strategists.",
+    "Retail or eCommerce, or strategy-agency experience, is explicitly preferred."
+   ],
+   "requirements": [
+    "6+ years in brand strategy/management/integrated marketing",
+    "Positioning, consumer behavior, messaging strategy",
+    "Creative development with agencies",
+    "Synthesizing research and campaign performance",
+    "People management"
+   ],
+   "text": "brand strategy masterbrand positioning messaging strategy creative development agency briefs campaign strategy insights consumer behavior research creative testing integrated marketing go-to-market media channel planning partnerships people management manage and develop retail ecommerce",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Head of Brand, Insights & Partnerships",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Wayfair%20Head%20of%20Brand%2C%20Insights%20%26%20Partnerships"
+   }
+  },
+  {
+   "id": "cargurus-brand-marketing-manager",
+   "company": "CarGurus",
+   "title": "Brand Marketing Manager",
+   "city": "Boston",
+   "addressNote": "Posting lists Boston, MA (HQ). Street address not in posting.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Hybrid; in-person interviews may be required.",
+   "salaryMin": 113000,
+   "salaryMax": 142000,
+   "seniority": "Senior",
+   "yearsMin": 5,
+   "datePostedNote": "The Muse showed it posted about 4 days ago. Built In's older copy was removed Sep 22, 2026, so this looks like a re-post.",
+   "url": "https://www.themuse.com/jobs/cargurus/brand-marketing-manager-437031",
+   "status": "check",
+   "statusNote": "Likely re-posted: still on Indeed and The Muse, but Built In's copy was removed in September. Confirm on CarGurus' careers site before applying.",
+   "contactNote": "Posting says the role works directly with the Sr. Director of Brand Marketing.",
+   "summary": "Leads integrated brand campaigns across the US, Canada and UK (TV, CTV, OOH, audio, influencer, social, sponsorships), writes creative briefs, manages agencies and sponsorships, and reports results to leadership.",
+   "howToLand": [
+    "Show one campaign end to end: brief, production, media mix, results. Name the channels (TV/CTV/OOH).",
+    "Bring a sponsorship you evaluated or negotiated, with the ROI logic.",
+    "Point to budget size you managed. They want a 'sizable budget'.",
+    "Consumer, digital-first experience matters more than automotive experience."
+   ],
+   "requirements": [
+    "5–8 years in brand marketing, consumer/digital-first",
+    "End-to-end integrated campaigns",
+    "Creative direction",
+    "Sponsorships/partnerships",
+    "Budget management",
+    "Executive-ready reporting"
+   ],
+   "text": "integrated brand campaigns tv ctv ooh audio influencer social sponsorships creative brief creative development production agencies brand steward negotiate sponsorship executive reporting budgets pr product marketing performance marketing analytics media",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Sr. Director of Brand Marketing",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=CarGurus%20Sr.%20Director%20of%20Brand%20Marketing"
+   }
+  },
+  {
+   "id": "simplisafe-manager-brand",
+   "company": "SimpliSafe",
+   "title": "Manager, Brand (Brand Activation & Operations)",
+   "city": "Boston",
+   "addressNote": "Posting lists Boston, MA. Street address not in posting.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Listed as hybrid on Indeed.",
+   "salaryMin": 141000,
+   "salaryMax": 188000,
+   "seniority": "Manager",
+   "yearsMin": 5,
+   "datePostedNote": "Date not captured. Seen on boards this week.",
+   "url": "https://job-boards.greenhouse.io/simplisafe",
+   "status": "listed",
+   "statusNote": "On Indeed and startup.jobs this week. The link opens SimpliSafe's job board; search 'Manager, Brand'.",
+   "contacts": [
+    {
+     "name": "Kaitlin Bonner",
+     "title": "Head of Brand, SimpliSafe",
+     "url": "https://event.adweek.com/AWH-advertisinghq-2025/speaker/1943014/kaitlin-bonner",
+     "note": "Source: 2025 Adweek speaker bio. Check she's still in the role on LinkedIn. SimpliSafe is also hiring a VP, Brand & Creative, so the reporting line may change."
+    }
+   ],
+   "contactNote": "",
+   "summary": "New role that turns brand strategy into action: master briefs, messaging frameworks, channel toolkits, brand review/governance, and agency and program operations during a brand refresh.",
+   "howToLand": [
+    "Show brand governance work: guidelines, review processes, toolkits other teams actually used.",
+    "Give an example of translating a positioning into channel-ready messaging.",
+    "Show agency operations: timelines, budgets, feedback loops.",
+    "Mention creative-performance analysis with integrated or performance teams."
+   ],
+   "requirements": [
+    "5+ years in brand management/brand ops",
+    "Master briefs & messaging frameworks",
+    "Brand standards governance",
+    "Agency relationship management (timelines, budget)",
+    "Cross-functional activation"
+   ],
+   "text": "brand strategy master brief messaging frameworks channel toolkits brand standards governance brand review guardrails agency timelines budget management creative performance integrated marketing cross-functional brand resources library",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "address": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Head of Brand",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=SimpliSafe%20Head%20of%20Brand"
+   }
+  },
+  {
+   "id": "oceanspray-sr-brand-manager-usa-foods",
+   "company": "Ocean Spray",
+   "title": "Sr. Brand Manager – USA Foods (Craisins, Sauce, Fresh)",
+   "city": "Boston",
+   "addressNote": "Boston Seaport office. Street address not in posting.",
+   "arrangement": "On-site",
+   "arrangementNote": "Built In tags it in-office. Other Ocean Spray Seaport roles are hybrid (Mon & Fri remote), so ask the recruiter.",
+   "salaryMin": 128000,
+   "salaryMax": 160000,
+   "seniority": "Senior",
+   "datePostedNote": "Built In: posted about a month ago (≈ early Oct 2026).",
+   "url": "https://www.builtinboston.com/job/sr-brand-manager/10541402",
+   "status": "listed",
+   "statusNote": "On Built In (Ocean Spray Cranberries) and job boards.",
+   "contactNote": "Posting says the role reports to the Senior Director of USA Foods.",
+   "summary": "General-manager-style CPG role: owns the P&L and long/short-term strategy for Craisins, Cranberry Sauce and Fresh Cranberries across Grocery, Mass and Club, and coaches Associate Brand Managers.",
+   "howToLand": [
+    "Classic CPG brand management is the bar: P&L ownership, consumption drivers, syndicated data.",
+    "Bring a growth story with volume/velocity/distribution numbers.",
+    "Show coaching of ABMs or junior marketers.",
+    "Ask about the hybrid schedule early."
+   ],
+   "requirements": [
+    "CPG brand management with P&L ownership",
+    "Channel strategy (Grocery, Mass, Club)",
+    "Consumer & customer insights",
+    "Coaching direct reports"
+   ],
+   "text": "p&l profit revenue brand equity cpg food grocery mass club channel strategy consumer insights forecast coach associate brand managers direct report innovation cross-functional syndicated data nielsen circana",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Senior Director, USA Foods",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Ocean%20Spray%20Senior%20Director%2C%20USA%20Foods"
+   }
+  },
+  {
+   "id": "oceanspray-brand-manager",
+   "company": "Ocean Spray",
+   "title": "Brand Manager",
+   "city": "Boston",
+   "addressNote": "Indeed lists Boston, MA 02210 (Seaport).",
+   "arrangement": "Unknown",
+   "arrangementNote": "Not stated in the listings I saw.",
+   "salaryMin": 116300,
+   "salaryMax": 145400,
+   "seniority": "Manager",
+   "datePostedNote": "Date not captured.",
+   "url": "https://www.mediabistro.com/jobs/3542609995-brand-manager",
+   "status": "listed",
+   "statusNote": "On Indeed and Mediabistro this week. Confirm on Ocean Spray careers.",
+   "contactNote": "No reporting line captured.",
+   "summary": "Brand Manager on Ocean Spray's brand marketing team: drives communication strategy with the in-house Brand Elevation team, media plans and shopper programs for key windows.",
+   "howToLand": [
+    "Show CPG comms strategy: creative messaging, media plan and shopper marketing tied to a sales window.",
+    "Bring forecasting or demand-planning examples."
+   ],
+   "requirements": [
+    "Communication & messaging strategy",
+    "Media plan and shopper marketing",
+    "Forecasting"
+   ],
+   "text": "communication strategy creative messaging media plan shopper marketing cpg beverage food forecast brand marketing",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Senior Director, Brand Marketing",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Ocean%20Spray%20Senior%20Director%2C%20Brand%20Marketing"
+   }
+  },
+  {
+   "id": "gbfb-brand-manager",
+   "company": "The Greater Boston Food Bank",
+   "title": "Brand Manager",
+   "city": "Boston",
+   "addressNote": "Indeed lists Boston, MA 02118. Street address not in posting.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Hybrid on the team's designated days (per posting).",
+   "salaryMin": 82578,
+   "salaryMax": 103223,
+   "seniority": "Manager",
+   "yearsMin": 5,
+   "datePosted": "2026-04-27",
+   "datePostedNote": "First posted Apr 27, 2026. Monster shows it re-posted recently.",
+   "url": "https://www.monster.com/job-openings/brand-manager-boston-ma--a47f19a3-d8f0-4d18-b4ee-69b2df884e37",
+   "status": "check",
+   "statusNote": "First posted in April and recently re-listed. Confirm it's still open on gbfb.org/careers.",
+   "contacts": [
+    {
+     "name": "Kathryn Alexander",
+     "title": "VP of External Affairs, GBFB",
+     "url": "https://www.gbfb.org/news/press-releases/kathryn-alexander-joins-gbfb/",
+     "note": "Possible contact only: she leads GBFB's awareness efforts (Feb 2026 press release). It's unconfirmed whether Brand sits in her org."
+    }
+   ],
+   "contactNote": "",
+   "summary": "Leads integrated marketing to raise awareness of GBFB's mission and governs brand guidelines across print, digital, web, email, social and large physical assets (billboards, vehicle wraps).",
+   "howToLand": [
+    "Mission-driven storytelling matters most: show work that moved awareness or giving.",
+    "Show brand governance across departments and many formats.",
+    "Mention vendor contracts, timelines and budget control.",
+    "Mention WordPress/CMS and design tools if she has them."
+   ],
+   "requirements": [
+    "5–10 years experience",
+    "Brand guidelines across mediums",
+    "Integrated marketing",
+    "Vendor contracts & budgets",
+    "CMS/WordPress"
+   ],
+   "text": "brand guidelines integrated marketing print digital web email social media billboards vehicle wraps storytelling nonprofit mission fundraising contracts vendor budget timelines wordpress cms graphic design",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "address": null,
+   "contactSearch": {
+    "title": "Director of Marketing & Communications",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=The%20Greater%20Boston%20Food%20Bank%20Director%20of%20Marketing%20%26%20Communications"
+   }
+  },
+  {
+   "id": "janji-sr-brand-marketing-manager",
+   "company": "Janji",
+   "title": "Senior Brand Marketing Manager",
+   "city": "Somerville",
+   "address": "285 Washington St, Somerville, MA 02143",
+   "addressNote": "Janji HQ per Built In.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Posting says 'Somerville, MA – Hybrid'. Built In tags it in-office.",
+   "seniority": "Senior",
+   "datePostedNote": "Built In showed it posted 6 days ago (re-posted).",
+   "url": "https://www.builtinboston.com/job/senior-brand-marketing-manager/6530317",
+   "status": "listed",
+   "statusNote": "Live on Built In Boston.",
+   "contactNote": "Reports to the VP of Marketing (per job-board summary).",
+   "summary": "'Conductor' of a running-apparel brand's creative marketing: owns the content calendar, project-manages creative asset production, leads campaigns and tracks marketing KPIs. Includes people management.",
+   "howToLand": [
+    "Show a content calendar or seasonal campaign she ran, with KPIs.",
+    "Show creative production management: shoots, assets, timelines.",
+    "A real running/outdoors connection helps. The posting asks for it.",
+    "Salary isn't listed, so ask early. Boards estimate $72k–$98k, below her $80k bar at the low end."
+   ],
+   "requirements": [
+    "Brand marketing leadership",
+    "Content calendar ownership",
+    "Creative production PM",
+    "KPI analysis",
+    "People management"
+   ],
+   "text": "content calendar creative asset production project management campaigns kpis storytelling social media people management team leadership running outdoor apparel communications",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "salaryMin": null,
+   "salaryMax": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "VP of Marketing",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Janji%20VP%20of%20Marketing"
+   }
+  },
+  {
+   "id": "elsevier-brand-strategic-comms-manager",
+   "company": "Elsevier (Cell Press)",
+   "title": "Brand & Strategic Communications Manager",
+   "city": "Medford",
+   "addressNote": "Posting lists Medford, MA (also Philadelphia/NY). Street address not in posting.",
+   "arrangement": "On-site",
+   "arrangementNote": "Built In tags it in-office.",
+   "salaryMin": 71600,
+   "salaryMax": 119400,
+   "seniority": "Manager",
+   "yearsMin": 3,
+   "datePosted": "2026-09-02",
+   "datePostedNote": "Req R117925. Posted ≈ Sep 2, 2026; Built In shows a recent re-post.",
+   "url": "https://www.builtinboston.com/job/brand-strategic-communications-manager/10972057",
+   "status": "listed",
+   "statusNote": "Live on Built In Boston. US national range shown; the bottom of the range is under $80k.",
+   "contactNote": "",
+   "summary": "Shapes Cell Press's strategic brand storytelling and runs integrated communications campaigns that bring the journals and researchers to life. Owns KPIs and manages freelancers.",
+   "howToLand": [
+    "Writing samples are decisive: bring 2–3 brand stories that explain complex ideas simply.",
+    "Show KPI frameworks for comms campaigns.",
+    "Science, academia or B2B audience experience is a plus."
+   ],
+   "requirements": [
+    "3–6 years brand/strategic comms, content or journalism",
+    "Integrated comms campaigns",
+    "KPIs & measurement",
+    "HubSpot"
+   ],
+   "text": "strategic storytelling brand communications integrated communications campaigns writing editing content marketing kpis measurement audience segmentation stakeholder freelancers hubspot",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "contactSearch": {
+    "title": "Head of Marketing, Cell Press",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Elsevier%20%28Cell%20Press%29%20Head%20of%20Marketing%2C%20Cell%20Press"
+   }
+  },
+  {
+   "id": "pg-senior-brand-manager-boston",
+   "company": "Procter & Gamble",
+   "title": "Senior Brand Manager – Boston",
+   "city": "Boston",
+   "address": "One Gillette Park, Boston, MA 02127",
+   "addressNote": "P&G's Gillette Boston site (Indeed lists 02127, South Boston).",
+   "arrangement": "Unknown",
+   "arrangementNote": "Not stated in the listing I saw.",
+   "seniority": "Senior",
+   "datePostedNote": "Date not captured.",
+   "url": "https://www.pgcareers.com/",
+   "status": "check",
+   "statusNote": "Seen on Indeed. Search P&G careers for 'Senior Brand Manager Boston'.",
+   "contactNote": "",
+   "summary": "P&G Senior Brand Manager based at the Boston (Gillette) site. P&G usually hires brand managers internally, so external senior hires usually need prior CPG brand-management experience.",
+   "howToLand": [
+    "Only worth it with classic CPG brand-management experience. P&G mostly promotes from within.",
+    "Prepare P&L, equity and innovation stories in P&G's 'situation → action → result' format."
+   ],
+   "requirements": [
+    "CPG brand management",
+    "P&L & equity building"
+   ],
+   "text": "cpg brand management p&l brand equity innovation consumer insights",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "salaryMin": null,
+   "salaryMax": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Associate Brand Director",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Procter%20%26%20Gamble%20Associate%20Brand%20Director"
+   }
+  },
+  {
+   "id": "theory-wellness-brand-manager",
+   "company": "Theory Wellness",
+   "title": "Brand Manager",
+   "city": "Medford",
+   "addressNote": "Indeed lists Medford, MA 02155.",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Listed as hybrid on Indeed.",
+   "seniority": "Manager",
+   "datePostedNote": "Date not captured.",
+   "url": "https://www.indeed.com/q-Assistant-Brand-Manager-l-Boston,-MA-jobs.html",
+   "status": "check",
+   "statusNote": "Seen on Indeed (salary cut off in the snippet). Open the posting to confirm pay and details.",
+   "contactNote": "",
+   "summary": "Brand Manager at an employee-owned Massachusetts cannabis company. I didn't capture the full job description.",
+   "howToLand": [
+    "Open the posting for requirements. Regulated-category or retail experience usually helps here."
+   ],
+   "requirements": [],
+   "text": "brand manager brand marketing retail",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Director of Marketing",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Theory%20Wellness%20Director%20of%20Marketing"
+   }
+  },
+  {
+   "id": "three-rings-brand-marketing-manager",
+   "company": "Three Rings",
+   "title": "Brand Marketing Manager",
+   "city": "Boston",
+   "addressNote": "Indeed lists Boston, MA 02116 (Back Bay).",
+   "arrangement": "Hybrid",
+   "arrangementNote": "Listed as hybrid on Indeed.",
+   "seniority": "Manager",
+   "datePostedNote": "Date not captured.",
+   "url": "https://www.indeed.com/q-brand-marketing-l-boston,-ma-jobs.html",
+   "status": "check",
+   "statusNote": "Seen on Indeed's Boston brand-marketing results. Open it to confirm.",
+   "contactNote": "",
+   "summary": "Brand Marketing Manager role in Back Bay. I didn't capture the full description.",
+   "howToLand": [
+    "Open the posting for requirements."
+   ],
+   "requirements": [],
+   "text": "brand marketing",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Head of Marketing",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Three%20Rings%20Head%20of%20Marketing"
+   }
+  },
+  {
+   "id": "wistia-brand-marketing-manager",
+   "company": "Wistia",
+   "title": "Brand Marketing Manager",
+   "city": "Cambridge",
+   "addressNote": "Wistia HQ is in Cambridge, near Central Square. Street address not in posting.",
+   "arrangement": "Unknown",
+   "arrangementNote": "Not stated in the listing I saw.",
+   "seniority": "Manager",
+   "datePostedNote": "LinkedIn showed '1 day ago' when indexed.",
+   "url": "https://www.linkedin.com/jobs/marketing-advertising-jobs-cambridge-ma",
+   "status": "check",
+   "statusNote": "Seen in LinkedIn's Cambridge results. I found no current employer posting, so confirm on wistia.com/careers.",
+   "contactNote": "Wistia's past brand roles reported to a Senior Director of Brand Marketing.",
+   "summary": "B2B video-software brand role. Past versions of this job covered PR, co-marketing and events.",
+   "howToLand": [
+    "B2B SaaS brand, PR, co-marketing and events experience fits best."
+   ],
+   "requirements": [],
+   "text": "brand marketing pr co-marketing events b2b software",
+   "source": "manual",
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-08",
+   "contacts": [],
+   "address": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "yearsMin": null,
+   "datePosted": null,
+   "contactSearch": {
+    "title": "Senior Director of Brand Marketing",
+    "url": "https://www.linkedin.com/search/results/people/?keywords=Wistia%20Senior%20Director%20of%20Brand%20Marketing"
+   }
+  }
+ ]
+}
