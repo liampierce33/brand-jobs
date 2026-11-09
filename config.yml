@@ -33,8 +33,24 @@ adzuna_queries:
 
 # A job not seen by any aggregator for this many days is treated as expired.
 expire_after_days: 3
-# Hand-added / seed jobs are dropped after this many days unless re-seen.
-manual_max_age_days: 45
+# Hand-added / seed jobs are dropped after this many days unless a live source finds them again.
+manual_max_age_days: 21
+# Any role whose posting date is older than this is hidden (stale or long-open postings).
+max_posting_age_days: 30
+
+# Roles to remove for good (closed, stale or not a fit). Copy the id from jobs.json.
+# These starter roles had no direct, current posting link, so they're removed.
+remove_ids:
+  - cargurus-brand-marketing-manager
+  - gbfb-brand-manager
+  - elsevier-brand-strategic-comms-manager
+  - pg-senior-brand-manager-boston
+  - theory-wellness-brand-manager
+  - three-rings-brand-marketing-manager
+  - wistia-brand-marketing-manager
+  - lego-delivery-brand-manager-adult
+  - lego-creative-agency-sr-brand-strategy
+  - simplisafe-manager-brand   # re-added automatically if SimpliSafe's own job board still lists it
 
 # --- Office street addresses (job APIs rarely include them) ---------------
 # key = company name in lower case. Add as you learn them.

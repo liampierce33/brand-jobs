@@ -43,6 +43,7 @@ TZ = dt.timezone(dt.timedelta(hours=-5))  # US Eastern (standard); good enough f
 TODAY = dt.datetime.now(TZ).date().isoformat()
 UA = {"User-Agent": "boston-brand-job-tracker/1.0 (personal job search)"}
 LOG: list[str] = []
+RESPONDED: set[str] = set()  # employer boards that answered this run
 
 
 def log(msg: str) -> None:
@@ -339,10 +340,13 @@ def to_job(raw: dict) -> dict | None:
 
 def collect(sources_today: set[str]) -> tuple[list[dict], dict]:
     raws, stats = [], {}
+    prefix = {"greenhouse": "gh", "lever": "lv", "ashby": "ab"}
 
     def run(name, fn, arg):
         try:
             got = fn(arg)
+            if name in prefix:
+                RESPONDED.add(f"{prefix[name]}-{arg}")
             stats[name] = stats.get(name, 0) + len(got)
             raws.extend(got)
         except Exception as e:
@@ -404,7 +408,7 @@ def merge(prev: dict, fresh: list[dict], ran_aggregators: bool) -> tuple[list[di
         if old and old["id"] != j["id"] and old["id"] not in {f["id"] for f in fresh}:
             j["id"] = old["id"]
     fresh_by_id = {j["id"]: j for j in fresh}
-    authoritative_boards_seen = {sid.rsplit("-", 1)[0] for j in fresh for sid in j["sourceIds"] if sid.startswith(("gh-", "lv-", "ab-"))}
+    authoritative_boards_seen = set(RESPONDED)
     out, new, expired = [], [], []
     for jid, j in fresh_by_id.items():
         old = prev_jobs.get(jid)
@@ -423,7 +427,7 @@ def merge(prev: dict, fresh: list[dict], ran_aggregators: bool) -> tuple[list[di
         age_first = (today - dt.date.fromisoformat(old.get("firstSeen", TODAY))).days
         board_ids = {sid.rsplit("-", 1)[0] for sid in old.get("sourceIds", [])}
         if old.get("source") == "manual":
-            gone = age_first > CFG.get("manual_max_age_days", 45) or not link_alive(old["url"])
+            gone = age_first > CFG.get("manual_max_age_days", 21) or not link_alive(old["url"])
         elif old.get("authoritative") and board_ids & authoritative_boards_seen:
             gone = True  # its employer board responded today and the job wasn't on it
         else:
@@ -495,7 +499,15 @@ def main(argv):
                 j["howToLand"] = tips
     for j in fresh:
         j.pop("_desc", None)
+    removed = set(CFG.get("remove_ids") or [])
+    cutoff = (dt.date.fromisoformat(TODAY) - dt.timedelta(days=CFG.get("max_posting_age_days", 30))).isoformat()
+    too_old = lambda j: bool(j.get("datePosted")) and str(j["datePosted"])[:10] < cutoff
+    fresh = [j for j in fresh if not too_old(j) and not (j["id"] in removed and not j.get("authoritative"))]
+    prev["jobs"] = [j for j in prev.get("jobs", []) if j["id"] not in removed]
     jobs, new, expired = merge(prev, fresh, run_agg)
+    stale = [j for j in jobs if too_old(j)]
+    jobs = [j for j in jobs if not too_old(j)]
+    expired += stale
     # The seed baseline counts as "seen", so the first live run only alerts on truly new roles.
     meta = {"generated": TODAY, "generatedAt": dt.datetime.now(TZ).isoformat(timespec="minutes"), "baseline": False,
             "aggregatorsRunOn": TODAY if run_agg else last_agg, "sources": stats,
